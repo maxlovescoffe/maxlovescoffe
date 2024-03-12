@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on lgbt+ friendly projects.
 - 📫 How to reach me @mxlinconn on instagram!
 - 😄 Pronouns: he/him
-- ⚡ Fun fact: i actually just started learning programming today so...
+  <3 proglang: python, c# and html
 
 <!---
 maxlovescoffe/maxlovescoffe is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

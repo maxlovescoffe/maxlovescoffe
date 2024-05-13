@@ -1,0 +1,31 @@
+from random import randint 
+tit = 'PAR OU ÍMPAR'
+v = 0 #vitórias
+print('\033[1;34m='*25)
+print(f'{tit:^25}') #
+print('\033[1;34m=\033[m'*25)
+while True:
+    computador = randint(0,10)
+    user = int(input('DIGITE UM NÚMERO DE 0 A 10: '))
+    imparoupar = input('ÍMPAR OU PAR? [I/P]').lower()
+    soma = computador+user
+    if soma%2 == 0:
+        if imparoupar == 'p': 
+            v += 1
+            print('\033[1;32m VOCÊ GANHOU!')
+            print(f'O COMPUTADOR JOGOU {computador} E VOCÊ JOGOU {user}. SOMADOS, TEMOS {soma}, QUE É UM NÚMERO PAR! ')
+        elif imparoupar == 'i':
+            print('\033[1;31m VOCÊ PERDEU!')
+            print(f'O COMPUTADOR JOGOU {computador} E VOCÊ JOGOU {user}. SOMADOS, TEMOS {soma}, QUE É UM NÚMERO PAR!:( ')
+            break
+    elif soma%2 != 0:
+        if imparoupar == 'p':
+            print('\033[1;31m  VOCÊ PERDEU!:( )')
+            print(f'O COMPUTADOR JOGOU {computador} E VOCÊ JOGOU {user}. SOMADOS, TEMOS {soma}, QUE É UM NÚMERO ÍMPAR!')
+            break
+        elif imparoupar == 'i':
+            v += 1
+            print('\033[1;32m VOCÊ GANHOU!')
+            print(f'O COMPUTADOR JOGOU {computador} E VOCÊ JOGOU {user}. SOMADOS, TEMOS {soma}, QUE É UM NÚMERO ÍMPAR!')
+print('\033[1;35m FIM DO JOGO!!')
+print(f'\033[1;34m SEU TOTAL DE VITÓRIAS FOI DE...{v} !') 
